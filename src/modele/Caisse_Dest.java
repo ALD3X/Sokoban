@@ -1,11 +1,11 @@
 package modele;
 
-class Caisse extends Element {
+class Caisse_Dest extends Element {
     private int x;
     private int y;
 
-    public Caisse(int x, int y) {
-        this.symbole = '$';
+    public Caisse_Dest(int x, int y) {
+        this.symbole = '*';
         this.x = x;
         this.y = y;
     }
