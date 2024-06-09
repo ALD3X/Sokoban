@@ -8,6 +8,10 @@ public class ModeTexte {
     private Carte carte;
     private Map<Character, Direction> touches;
 
+    /**
+     * Constructeur de la classe ModeTexte
+     * @param carte La carte du jeu
+     */
     public ModeTexte(Carte carte) {
         this.carte = carte;
         touches = new HashMap<>();
@@ -17,6 +21,9 @@ public class ModeTexte {
         touches.put('s', Direction.BAS);
     }
 
+    /**
+     * Méthode pour démarrer une partie en mode texte
+     */
     public void demarrerPartie() {
         boolean partieTerminee = false;
 
@@ -38,4 +45,3 @@ public class ModeTexte {
         System.out.println("Félicitations, vous avez terminé la partie !");
     }
 }
-
